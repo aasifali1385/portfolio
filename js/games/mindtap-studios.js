@@ -6,15 +6,23 @@
 //         banner, banner2x, icon, icon2x, rating ("" hides the stars).
 // See js/app-card.js for details.
 
-addSection("MindTap Studios", [
+addSection("MindTap Labs", [
     {
         name: "Arrow Puzzle: Clear the Board",
-        developer: "MindTap Studios",
+        developer: "MindTap Labs",
         link: "https://play.google.com/store/apps/details?id=com.mindtap.arrow.puzzle.game",
         banner: "https://play-lh.googleusercontent.com/detEHH96FX0rwX8J64Q2nyo5DVeV1tx_H0ywNfhaQKqtfpdAwtSKSQzqRCUktmEoZtHRPde4lmEVnoWnQvT8KA=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/detEHH96FX0rwX8J64Q2nyo5DVeV1tx_H0ywNfhaQKqtfpdAwtSKSQzqRCUktmEoZtHRPde4lmEVnoWnQvT8KA=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/QfrlqGfyrF80e9ZhFjxOS7EB4wtBmNtQxnHVyjwMH2hS56HagAc0hMJl6zwecFgiZZMJ_oknIdT8h6VCq_7SXA=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/QfrlqGfyrF80e9ZhFjxOS7EB4wtBmNtQxnHVyjwMH2hS56HagAc0hMJl6zwecFgiZZMJ_oknIdT8h6VCq_7SXA=s128-rw",
         rating: "4,8"
-    }
+    },
+     {
+            name: "Ludo Battle - Online Ludo",
+            developer: "MindTap Labs",
+            link: BASE_URL + "ludobattle/",
+            banner: "images/banner_ludobattle.png",
+            icon: "images/ic_launcher_ludobattle.png",
+            rating: "4.5"
+     },
 ]);

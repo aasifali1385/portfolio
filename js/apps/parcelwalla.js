@@ -26,5 +26,15 @@ addSection("ParcelWalla", [
         icon: "https://play-lh.googleusercontent.com/wJR93x8iVfoUfHIFgTRATVzViMcdm7SvPKCFDSMaxuRyVLqI9H5gII55bQaH8OjjyQ=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/wJR93x8iVfoUfHIFgTRATVzViMcdm7SvPKCFDSMaxuRyVLqI9H5gII55bQaH8OjjyQ=s128-rw",
         rating: "4.9"
+    },
+    {
+        name: "LibPlaza",
+        developer: "Libplazas",
+        link: "https://play.google.com/store/apps/details?id=com.libplaza.student",
+        banner: "https://play-lh.googleusercontent.com/SKVbFR8etdqpeI8C9AgRKDr_WQkuDDhO_N65jqC7z434wYvK2Pqs-rYG8u4gBBsbo2JB9evXcMR6mkHS5ICU=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/SKVbFR8etdqpeI8C9AgRKDr_WQkuDDhO_N65jqC7z434wYvK2Pqs-rYG8u4gBBsbo2JB9evXcMR6mkHS5ICU=w832-h470-rw",
+        icon: "https://play-lh.googleusercontent.com/UjB1LRifaE_IY_f9wgmuQ-KBakMoTujM6cjrHx23eBI3jCk3TInYjlGb_LRI3M5BVAuavdxYvArbumNfInrRfA=s64-rw",
+        icon2x: "https://play-lh.googleusercontent.com/UjB1LRifaE_IY_f9wgmuQ-KBakMoTujM6cjrHx23eBI3jCk3TInYjlGb_LRI3M5BVAuavdxYvArbumNfInrRfA=s128-rw",
+        rating: ""
     }
 ]);

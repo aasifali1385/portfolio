@@ -1,4 +1,4 @@
-// A Developers (Apps tab)
+// MindTap Labs (Apps tab)
 //
 // To add an app: copy one { ... } block below, paste it after the last one
 // (with a comma between blocks) and change the values.
@@ -6,10 +6,10 @@
 //         banner, banner2x, icon, icon2x, rating ("" hides the stars).
 // See js/app-card.js for details.
 
-addSection("A Developers", [
+addSection("MindTap Labs", [
     {
         name: "नमाज का तरीका - Namaz in Hindi",
-        developer: "A Developers",
+        developer: "MindTap Labs",
         link: "https://play.google.com/store/apps/details?id=com.aa.namaz",
         banner: "https://play-lh.googleusercontent.com/1MoBphbfS-qglVSAcSY-gFmHgiPWPHnZFwi-Rd04dw0Da4M33r7_QBMkX1ueGNP1SA=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/1MoBphbfS-qglVSAcSY-gFmHgiPWPHnZFwi-Rd04dw0Da4M33r7_QBMkX1ueGNP1SA=w832-h470-rw",
@@ -19,7 +19,7 @@ addSection("A Developers", [
     },
     {
         name: "Expense & Net Worth Tracker",
-        developer: "A Developers",
+        developer: "MindTap Labs",
         link: "https://play.google.com/store/apps/details?id=com.tracker.expense.networth",
         banner: "https://play-lh.googleusercontent.com/_uAXm5WI0m73GPi2f5-ShitnAcEgfWM7DN4rTWIITTHn9v9Ts-HLXuXeVGEb6_gMHA=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/_uAXm5WI0m73GPi2f5-ShitnAcEgfWM7DN4rTWIITTHn9v9Ts-HLXuXeVGEb6_gMHA=w832-h470-rw",
@@ -29,7 +29,7 @@ addSection("A Developers", [
     },
     {
         name: "Virtual Card Holder",
-        developer: "A Developers",
+        developer: "MindTap Labs",
         link: "https://play.google.com/store/apps/details?id=com.aa.credit.card.wallet",
         banner: "https://play-lh.googleusercontent.com/QJxdftK74JugK6eNhQFGi1ul9sANEdE4-x5kZ2ym7yN5-RsA7H4e3NQuJeK0JoOX2Cw=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/QJxdftK74JugK6eNhQFGi1ul9sANEdE4-x5kZ2ym7yN5-RsA7H4e3NQuJeK0JoOX2Cw=w832-h470-rw",
