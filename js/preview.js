@@ -106,7 +106,15 @@ function renderPreview(app) {
 
     <div class="pv-body">
         <div class="pv-main">
-            <div class="pv-shots">${shots}
+            <div class="pv-shots-wrap">
+                <div class="pv-shots">${shots}
+                </div>
+                <button class="pv-arrow pv-arrow--left" type="button" aria-label="Previous screenshots" hidden>
+                    <i class="material-icons" aria-hidden="true">chevron_left</i>
+                </button>
+                <button class="pv-arrow pv-arrow--right" type="button" aria-label="Next screenshots" hidden>
+                    <i class="material-icons" aria-hidden="true">chevron_right</i>
+                </button>
             </div>
 
             <section class="pv-section">
@@ -138,5 +146,49 @@ function renderPreview(app) {
     </div>
 </main>`;
 
-    document.currentScript.insertAdjacentHTML('beforebegin', html);
+    const script = document.currentScript;
+    script.insertAdjacentHTML('beforebegin', html);
+    setUpScreenshotArrows(script.previousElementSibling.querySelector('.pv-shots-wrap'));
+}
+
+// Left/right arrows on the screenshot strip, shown only when there is more to scroll to.
+function setUpScreenshotArrows(wrap) {
+    const strip = wrap.querySelector('.pv-shots');
+    const left = wrap.querySelector('.pv-arrow--left');
+    const right = wrap.querySelector('.pv-arrow--right');
+
+    const update = () => {
+        const max = strip.scrollWidth - strip.clientWidth;
+        left.hidden = strip.scrollLeft <= 4;
+        right.hidden = strip.scrollLeft >= max - 4;
+    };
+
+    // Page by whole screenshots: Next brings the first cut-off screenshot to the left
+    // edge, Previous brings the screenshot cut off on the left to the right edge.
+    const page = (direction) => {
+        const view = strip.getBoundingClientRect();
+        const shots = [...strip.querySelectorAll('.pv-shot')].map((shot) => {
+            const box = shot.getBoundingClientRect();
+            return {start: box.left - view.left + strip.scrollLeft, end: box.right - view.left + strip.scrollLeft};
+        });
+        const from = strip.scrollLeft;
+        const to = from + strip.clientWidth;
+        let target;
+        if (direction > 0) {
+            const next = shots.find((shot) => shot.end > to + 1);
+            target = next ? next.start - 2 : strip.scrollWidth;
+        } else {
+            const previous = [...shots].reverse().find((shot) => shot.start < from - 1);
+            target = previous ? previous.end - strip.clientWidth + 2 : 0;
+        }
+        strip.scrollTo({left: Math.max(0, target), behavior: 'smooth'});
+    };
+
+    left.addEventListener('click', () => page(-1));
+    right.addEventListener('click', () => page(1));
+    strip.addEventListener('scroll', update, {passive: true});
+    window.addEventListener('resize', update);
+    // Screenshot widths are only known once each image has loaded.
+    strip.querySelectorAll('img').forEach((img) => img.addEventListener('load', update));
+    update();
 }

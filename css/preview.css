@@ -221,13 +221,67 @@
 
 /* ---- Screenshots ---- */
 
+.pv-shots-wrap {
+    margin-bottom: 40px;
+    position: relative;
+}
+
 .pv-shots {
     display: flex;
     gap: 12px;
-    margin-bottom: 40px;
     overflow-x: auto;
     padding: 2px 2px 12px;
-    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+}
+
+.pv-shots::-webkit-scrollbar {
+    display: none;
+}
+
+/* Round arrow buttons sitting on the strip's edges (desktop only) */
+.pv-arrow {
+    align-items: center;
+    background: #fff;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
+    color: var(--pv-text);
+    cursor: pointer;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 6px);
+    transform: translateY(-50%);
+    width: 56px;
+    z-index: 1;
+}
+
+.pv-arrow:hover {
+    background: #f8f9fa;
+}
+
+.pv-arrow[hidden] {
+    display: none;
+}
+
+.pv-arrow .material-icons {
+    font-size: 24px;
+}
+
+.pv-arrow--left {
+    left: -28px;
+}
+
+.pv-arrow--right {
+    right: -28px;
+}
+
+/* Touch screens and phones swipe the strip instead */
+@media (hover: none), screen and (max-width: 839px) {
+    .pv-arrow {
+        display: none;
+    }
 }
 
 .pv-shot {
@@ -235,7 +289,6 @@
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
     flex-shrink: 0;
     height: 300px;
-    scroll-snap-align: start;
 }
 
 .pv-shot img {
