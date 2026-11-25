@@ -2891,7 +2891,8 @@ c-wiz.Ubi8Z {
 
 .Shbxxd,
 .jpDEN {
-    height: calc(var(--card-width)*9/16);
+    /* Banners are 1024x500 (Play Store feature graphic ratio) */
+    height: calc(var(--card-width)*500/1024);
     object-fit: cover;
     width: var(--card-width)
 }
