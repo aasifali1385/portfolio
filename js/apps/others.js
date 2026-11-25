@@ -17,23 +17,15 @@ addSection("Others", [
         icon2x: "https://play-lh.googleusercontent.com/1dBJd1d_PHgZ3H2vC1F8JCFZpCvGwF_VrmAISgM9MXRqsGpKoeSVNwK0LSSxwNQauwI=s128-rw",
         rating: "4.4"
     },
-    {
-        name: "99 Store",
+   {
+        name: "TDS Battle - Free Fire",
         developer: "A Developers",
-        link: BASE_URL + "store99/",
-        banner: "images/banner_99store.png",
-        icon: "images/ic_launcher_99store.png",
-        rating: "4.5"
+        link: BASE_URL + "tdsbattle/",
+        banner: "images/banner_tdsbattle.png",
+        icon: "images/ic_launcher_tdsbattle.png",
+        rating: "4.3"
     },
-    {
-        name: "Fashino - Online Shopping App",
-        developer: "A Developers",
-        link: BASE_URL + "fashino/",
-        banner: "images/banner_fashino.png",
-        icon: "images/ic_launcher_fashino.png",
-        rating: "4.5"
-    },
-    {
+   {
         name: "Ludo Battle - Online Ludo",
         developer: "A Developers",
         link: BASE_URL + "ludobattle/",
@@ -42,11 +34,37 @@ addSection("Others", [
         rating: "4.5"
     },
     {
-        name: "TDS Battle - Free Fire",
+        name: "Fashino: Online Shopping App",
         developer: "A Developers",
-        link: BASE_URL + "tdsbattle/",
-        banner: "images/banner_tdsbattle.png",
-        icon: "images/ic_launcher_tdsbattle.png",
-        rating: "4.3"
-    }
+        link: BASE_URL + "fashino/",
+        banner: "images/banner_fashino.png",
+        icon: "images/ic_launcher_fashino.png",
+        rating: "4.5"
+    },
+    {
+        name: "99 Store: A Billing App",
+        developer: "A Developers",
+        link: BASE_URL + "store99/",
+        banner: "images/banner_99store.png",
+        icon: "images/ic_launcher_99store.png",
+        rating: "4.5"
+    },
+    {
+        name: "Billing Land: Simplify Billing",
+        developer: "A Developers",
+        link: BASE_URL + "billingland/",
+        banner: "billingland/images/banner.png",
+        icon: "billingland/images/logo.png",
+        rating: ""
+    },
+    {
+            name: "Cure4Mind",
+            developer: "CUREYA",
+            link: "https://play.google.com/store/apps/details?id=com.cureya.cure4mind",
+            banner: "https://play-lh.googleusercontent.com/g4lRN8p1aPv8qoVYlfmPlblSSCY3_LKD_T9E7m9nHGzT5cg9Gm9U9xqnHef8DoTz55w=w416-h235-rw",
+            banner2x: "https://play-lh.googleusercontent.com/g4lRN8p1aPv8qoVYlfmPlblSSCY3_LKD_T9E7m9nHGzT5cg9Gm9U9xqnHef8DoTz55w=w832-h470-rw",
+            icon: "https://play-lh.googleusercontent.com/-4uNz9ZqXTJEtj8xf2quU8y2fztl5uL4s3BqcaNIg-rRXUemVhQ-RIWn_FgxmrzPOQc=s64-rw",
+            icon2x: "https://play-lh.googleusercontent.com/-4uNz9ZqXTJEtj8xf2quU8y2fztl5uL4s3BqcaNIg-rRXUemVhQ-RIWn_FgxmrzPOQc=s128-rw",
+            rating: "4.3"
+        }
 ]);
