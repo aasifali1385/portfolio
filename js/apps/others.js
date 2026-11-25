@@ -10,7 +10,7 @@ addSection("Others", [
     {
         name: "ActAtlas",
         developer: "ActAtlas",
-        link: "https://play.google.com/store/apps/details?id=com.act.bns",
+        link: BASE_URL + "actatlas/",
         banner: "https://play-lh.googleusercontent.com/VMkPBQZudPSsodq-Jm9AuhbpRiesPxcJjNNy8EtK0iRPQe3Gud8NJIVkKf5GsKpSDSc=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/VMkPBQZudPSsodq-Jm9AuhbpRiesPxcJjNNy8EtK0iRPQe3Gud8NJIVkKf5GsKpSDSc=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/1dBJd1d_PHgZ3H2vC1F8JCFZpCvGwF_VrmAISgM9MXRqsGpKoeSVNwK0LSSxwNQauwI=s64-rw",

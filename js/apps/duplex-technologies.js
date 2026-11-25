@@ -7,10 +7,30 @@
 // See js/app-card.js for details.
 
 addSection("Duplex Technologies", [
+  {
+        name: "Super Astrologer : Talk Now",
+        developer: "Super Astrologer Team",
+        link: "https://play.google.com/store/apps/details?id=com.superastrologer",
+        banner: "https://play-lh.googleusercontent.com/c4GFDY7sdd-5Hd7QiHhBli-YsmR978oKLpxEEEnIv8dNOKgu38FvlMW8rxJXCnpmNWiXdWd3RlQDY_cZu9Dlfsc=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/c4GFDY7sdd-5Hd7QiHhBli-YsmR978oKLpxEEEnIv8dNOKgu38FvlMW8rxJXCnpmNWiXdWd3RlQDY_cZu9Dlfsc=w832-h470-rw",
+        icon: "https://play-lh.googleusercontent.com/Y5l8hmuLGtXzqPi5Q5IrBMqum0_L-HWSyoJSBkCGNO7OJ3-pfknxTMMWNifUrT_CXnQx=s64-rw",
+        icon2x: "https://play-lh.googleusercontent.com/Y5l8hmuLGtXzqPi5Q5IrBMqum0_L-HWSyoJSBkCGNO7OJ3-pfknxTMMWNifUrT_CXnQx=s128-rw",
+        rating: "4.3"
+    },
+    {
+        name: "Super Astrologer Partner",
+        developer: "Super Astrologer Team",
+        link: "https://play.google.com/store/apps/details?id=com.superastrologerpartner",
+        banner: "https://play-lh.googleusercontent.com/W4kBhuurnYKM97h9tLjgQkz60bprTSUvDtPfE_TgQTjxC9Z3aE1v6a8QoQn3n44T0Jg=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/W4kBhuurnYKM97h9tLjgQkz60bprTSUvDtPfE_TgQTjxC9Z3aE1v6a8QoQn3n44T0Jg=w832-h470-rw",
+        icon: "https://play-lh.googleusercontent.com/snZhhLrQw9fXyuAQnLlAnwJSi6evl0U-Pg8dzgVbCaYSS_0wb3lbUwNtTk5CP9pXYqhL=s64-rw",
+        icon2x: "https://play-lh.googleusercontent.com/snZhhLrQw9fXyuAQnLlAnwJSi6evl0U-Pg8dzgVbCaYSS_0wb3lbUwNtTk5CP9pXYqhL=s128-rw",
+        rating: "4.6"
+    },
     {
         name: "PetZoo",
         developer: "Roboman Ltd",
-        link: "https://play.google.com/store/apps/details?id=com.petzooapp",
+        link: BASE_URL + "petzoo/",
         banner: "https://play-lh.googleusercontent.com/9BSsF1r3g7Qafe3XEBFgYwUfXf8iPbgd1W1puzAr96brNHyUOxu7lbZa1-L2_ukSEiE=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/9BSsF1r3g7Qafe3XEBFgYwUfXf8iPbgd1W1puzAr96brNHyUOxu7lbZa1-L2_ukSEiE=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/NLvCzRvqm5_UUC16jWJGBr-5i49YbbDwhS6Gcwl0PXUkS1POeIwSlEZyRo7HSn3A5_A=s64-rw",
@@ -40,33 +60,14 @@ addSection("Duplex Technologies", [
     {
         name: "Look Book Cabs",
         developer: "Look Book Cabs",
-        link: "https://play.google.com/store/apps/details?id=com.lookbook.cabs",
+        link: BASE_URL + "lookbookcabs/",
         banner: "https://play-lh.googleusercontent.com/iSNTAoI8y871_5qF1Gd6c1R4uoXP4VQzaRlP7TIvYWrEvuT-XFRwqSEz_Kc3NGHFceM=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/iSNTAoI8y871_5qF1Gd6c1R4uoXP4VQzaRlP7TIvYWrEvuT-XFRwqSEz_Kc3NGHFceM=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/KkZMacCpBAZ7jtaeRzOJdt8rL7wrpEVrQSDz0AODzuwOhSE-TS2oVdFiXyDePXG8_A=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/KkZMacCpBAZ7jtaeRzOJdt8rL7wrpEVrQSDz0AODzuwOhSE-TS2oVdFiXyDePXG8_A=s128-rw",
         rating: "4.3"
     },
-    {
-        name: "Super Astrologer : Talk Now",
-        developer: "Super Astrologer Team",
-        link: "https://play.google.com/store/apps/details?id=com.superastrologer",
-        banner: "https://i.ytimg.com/vi/RJxKiFHYUbo/hqdefault.jpg",
-        banner2x: "https://play-lh.googleusercontent.com/iSNTAoI8y871_5qF1Gd6c1R4uoXP4VQzaRlP7TIvYWrEvuT-XFRwqSEz_Kc3NGHFceM=w832-h470-rw",
-        icon: "https://play-lh.googleusercontent.com/Y5l8hmuLGtXzqPi5Q5IrBMqum0_L-HWSyoJSBkCGNO7OJ3-pfknxTMMWNifUrT_CXnQx=s64-rw",
-        icon2x: "https://play-lh.googleusercontent.com/Y5l8hmuLGtXzqPi5Q5IrBMqum0_L-HWSyoJSBkCGNO7OJ3-pfknxTMMWNifUrT_CXnQx=s128-rw",
-        rating: "4.8"
-    },
-    {
-        name: "Super Astrologer Partner",
-        developer: "Super Astrologer Team",
-        link: "https://play.google.com/store/apps/details?id=com.superastrologerpartner",
-        banner: "https://play-lh.googleusercontent.com/W4kBhuurnYKM97h9tLjgQkz60bprTSUvDtPfE_TgQTjxC9Z3aE1v6a8QoQn3n44T0Jg=w416-h235-rw",
-        banner2x: "https://play-lh.googleusercontent.com/W4kBhuurnYKM97h9tLjgQkz60bprTSUvDtPfE_TgQTjxC9Z3aE1v6a8QoQn3n44T0Jg=w832-h470-rw",
-        icon: "https://play-lh.googleusercontent.com/snZhhLrQw9fXyuAQnLlAnwJSi6evl0U-Pg8dzgVbCaYSS_0wb3lbUwNtTk5CP9pXYqhL=s64-rw",
-        icon2x: "https://play-lh.googleusercontent.com/snZhhLrQw9fXyuAQnLlAnwJSi6evl0U-Pg8dzgVbCaYSS_0wb3lbUwNtTk5CP9pXYqhL=s128-rw",
-        rating: "4.8"
-    },
+
     {
         name: "BitGrow",
         developer: "BitGrow Investment Labs",

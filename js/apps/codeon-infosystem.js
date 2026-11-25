@@ -10,7 +10,7 @@ addSection("CodeON Infosystem", [
     {
         name: "Docdresses",
         developer: "CodeON Infosystem",
-        link: "https://play.google.com/store/apps/details?id=com.docdresses",
+        link: BASE_URL + "docdresses/",
         banner: "images/banner_docdresses.png",
         icon: "https://play-lh.googleusercontent.com/95Y11D_tVpqNP-eTRhQXvLQL1Kl_eTWtzduUwAqIMOJ2NrCjPAZ-Nzgs9_ntP35wLw=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/95Y11D_tVpqNP-eTRhQXvLQL1Kl_eTWtzduUwAqIMOJ2NrCjPAZ-Nzgs9_ntP35wLw=s128-rw",
@@ -19,7 +19,7 @@ addSection("CodeON Infosystem", [
     {
         name: "CodeON Infosystem",
         developer: "CodeON Infosystem",
-        link: "https://play.google.com/store/apps/details?id=com.codeon.infosystem",
+        link: BASE_URL + "codeoninfosystem/",
         banner: "https://play-lh.googleusercontent.com/htXFAS5X0vs5PANLed6caRa5XePI7aKXEj4DSo7vdDDBB4DeDIWCsq9FgkFHQQSdCBCC=w416-h235-rw",
         banner2x: "https://play-lh.googleusercontent.com/htXFAS5X0vs5PANLed6caRa5XePI7aKXEj4DSo7vdDDBB4DeDIWCsq9FgkFHQQSdCBCC=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/qmFLknflFDEKO-WEf9iKlvcW6yq1uHbf1llCHsfAkwNRmx10OGES1w73iT0VVoY1Og=s64-rw",
@@ -29,7 +29,7 @@ addSection("CodeON Infosystem", [
     {
         name: "CureBy - CMC",
         developer: "CodeON Infosystem",
-        link: "https://play.google.com/store/apps/details?id=com.health.cureby",
+        link: BASE_URL + "cureby/",
         banner: "images/banner_cureby.png",
         icon: "https://play-lh.googleusercontent.com/sl7BZbSh18b261p_X35OLQjd1jA3jBJXvV8pGCnS3lfcBrTK-hUfHf_MDyZKKUwMMw=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/sl7BZbSh18b261p_X35OLQjd1jA3jBJXvV8pGCnS3lfcBrTK-hUfHf_MDyZKKUwMMw=s128-rw",
@@ -38,7 +38,7 @@ addSection("CodeON Infosystem", [
     {
         name: "Educloud - Study in Abroad",
         developer: "CodeON Infosystem",
-        link: "https://play.google.com/store/apps/details?id=com.educloudapp",
+        link: BASE_URL + "educloud/",
         banner: "images/banner_educloud.png",
         icon: "https://play-lh.googleusercontent.com/kX21n0H5N-3N20QIcN7MJ4bfoR5stPVy2IAXv3OHT9xlPdwse11cNRTBBdANrHEM1ZfL=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/kX21n0H5N-3N20QIcN7MJ4bfoR5stPVy2IAXv3OHT9xlPdwse11cNRTBBdANrHEM1ZfL=s128-rw",
