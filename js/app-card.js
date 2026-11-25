@@ -1,9 +1,9 @@
 /*
  * Renders sections of app cards in the Google Play style.
  *
- * The content lives in two files:
- *   js/apps.js   sections shown on the Apps tab
- *   js/games.js  sections shown on the Games tab
+ * The content lives in one file per developer section:
+ *   js/apps/*.js   sections shown on the Apps tab
+ *   js/games/*.js  sections shown on the Games tab
  * Each calls addSection("Heading", [app, app, ...]). The section is inserted
  * exactly where that file's <script> tag sits in index.html.
  *
@@ -11,13 +11,25 @@
  *   name       App name (required)
  *   developer  Developer name shown under the app name (required)
  *   link       URL the card opens: the Play Store page, or the app's preview
- *              page, e.g. "https://aasifali1385.github.io/portfolio/bitgrow"
+ *              page as BASE_URL + "folder/", e.g. BASE_URL + "bitgrow/"
  *   banner     Banner image URL (required)
  *   banner2x   Sharper banner for high-DPI screens (optional)
  *   icon       App icon URL (required)
  *   icon2x     Sharper icon for high-DPI screens (optional)
  *   rating     Star rating such as "4.5" (optional; hidden when empty)
  */
+
+// The portfolio's home folder (the folder that holds js/), worked out from where
+// this script is loaded, so links work on GitHub Pages, any other host, and locally.
+// e.g. "https://aasifali1385.github.io/portfolio/" or "file:///C:/.../portfolio/"
+const BASE_URL = new URL('../', document.currentScript.src).href;
+
+// Opened straight from disk, a folder link shows a file list instead of the page,
+// so point folder links at their index.html there.
+function pageUrl(url) {
+    return location.protocol === 'file:' && url.endsWith('/') ? url + 'index.html' : url;
+}
+
 function escapeHtml(value) {
     return String(value)
         .replace(/&/g, '&amp;')
@@ -30,7 +42,7 @@ function appCardHtml(app) {
     const esc = escapeHtml;
     const srcset = (x1, x2) => x2 ? `srcset="${esc(x2)} 2x"` : `srcset="${esc(x1)}"`;
 
-    const target = `href="${esc(app.link)}"`;
+    const target = `href="${esc(pageUrl(app.link))}"`;
 
     const rating = app.rating ? `
                 <div class="ubGTjb">

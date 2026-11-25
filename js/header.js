@@ -11,13 +11,16 @@
  *          (index.html switches tabs itself instead)
  */
 function renderHeader({root = './', tab = 'apps', links = false} = {}) {
+    // Opened straight from disk, a folder link shows a file list, so link to index.html there.
+    const home = location.protocol === 'file:' ? root + 'index.html' : root;
+
     const html = `
 <c-wiz>
     <header id="header" class="S3WLMd">
         <nav class="oPjgQb">
 
             <!-- Logo -->
-            <a href="${root}" aria-label="Google Play logo" class="f0UV3d">
+            <a href="${home}" aria-label="Google Play logo" class="f0UV3d">
                 <svg class="kOqhQd" aria-hidden="true" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                     <path fill="none" d="M0,0h40v40H0V0z"/>
                     <g>
@@ -137,8 +140,8 @@ function renderHeader({root = './', tab = 'apps', links = false} = {}) {
     setActive(apps, tab === 'apps');
 
     if (links) {
-        games.addEventListener('click', () => location.href = root + '#games');
-        apps.addEventListener('click', () => location.href = root);
+        games.addEventListener('click', () => location.href = home + '#games');
+        apps.addEventListener('click', () => location.href = home);
     }
 
     // Header shadow once the page is scrolled

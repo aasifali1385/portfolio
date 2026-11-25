@@ -2,7 +2,7 @@
 //
 // To add an app: copy one { ... } block below, paste it after the last one
 // (with a comma between blocks) and change the values.
-// Fields: name, developer, link,
+// Fields: name, developer, link (Play Store URL, or BASE_URL + "folder/" for a preview page),
 //         banner, banner2x, icon, icon2x, rating ("" hides the stars).
 // See js/app-card.js for details.
 
