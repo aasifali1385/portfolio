@@ -2983,3 +2983,9 @@ c-wiz.Ubi8Z {
     min-height: 100%;
     position: relative
 }
+/* Header tabs that are not used yet (Movies, Books, Kids) */
+.ucf8re .VfPpkd-AznF2e:disabled {
+    opacity: .38;
+    cursor: default;
+    pointer-events: none
+}
