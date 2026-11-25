@@ -2,7 +2,7 @@
 //
 // To add an app: copy one { ... } block below, paste it after the last one
 // (with a comma between blocks) and change the values.
-// Fields: name, developer, link (or page: "folder" for a local page),
+// Fields: name, developer, link,
 //         banner, banner2x, icon, icon2x, rating ("" hides the stars).
 // See js/app-card.js for details.
 
@@ -70,7 +70,7 @@ addSection("Duplex Technologies", [
     {
         name: "BitGrow",
         developer: "BitGrow Investment Labs",
-        page: "bitgrow",
+        link: "https://aasifali1385.github.io/portfolio/bitgrow",
         banner: "images/banner_bitgrow.png",
         icon: "images/ic_launcher_bitgrow.png",
         rating: "4.5"

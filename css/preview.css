@@ -1,0 +1,354 @@
+/*
+ * App preview page (one per app folder, e.g. bitgrow/index.html).
+ * Layout modeled on a Google Play app page. Used together with ../style.css
+ * (header styles) and ../js/preview.js (markup).
+ */
+
+.pv {
+    --pv-green: #01875f;
+    --pv-text: #202124;
+    --pv-muted: #5f6368;
+    --pv-line: #dadce0;
+
+    color: var(--pv-text);
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0 24px;
+    padding: 96px 0 96px;
+}
+
+@media screen and (min-width: 600px) {
+    .pv { margin: 0 48px; }
+}
+
+@media screen and (min-width: 1280px) {
+    .pv { margin: 0 72px; }
+}
+
+@media screen and (min-width: 1440px) {
+    .pv { margin: 0 auto; max-width: 1296px; }
+}
+
+.pv h1,
+.pv h2,
+.pv-dev,
+.pv-install {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+/* ---- Title block ---- */
+
+.pv-top {
+    align-items: flex-start;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.pv-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 4rem;
+    margin: 0;
+    word-break: break-word;
+}
+
+.pv-dev {
+    color: var(--pv-green);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 16px;
+}
+
+.pv-icon {
+    border-radius: 20%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    flex-shrink: 0;
+    height: 240px;
+    object-fit: cover;
+    width: 240px;
+}
+
+.pv-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0 32px;
+}
+
+.pv-stat {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 96px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.pv-stat:first-child {
+    padding-left: 0;
+    align-items: flex-start;
+}
+
+.pv-stat + .pv-stat::before {
+    background: var(--pv-line);
+    content: "";
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+
+.pv-stat-value {
+    align-items: center;
+    display: flex;
+    font-size: .875rem;
+    font-weight: 500;
+    gap: 2px;
+    height: 24px;
+}
+
+.pv-stat-value .material-icons {
+    font-size: 14px;
+}
+
+.pv-stat-label {
+    color: var(--pv-muted);
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.pv-badge {
+    border: 1.5px solid var(--pv-text);
+    border-radius: 2px;
+    display: inline-block;
+    font-size: .625rem;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 0 2px;
+}
+
+.pv-install {
+    background: var(--pv-green);
+    border-radius: 8px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .875rem;
+    font-weight: 500;
+    height: 44px;
+    min-width: 200px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+.pv-install:hover {
+    background: #056449;
+}
+
+.pv-install[aria-disabled="true"] {
+    background: #e8eaed;
+    color: var(--pv-muted);
+    pointer-events: none;
+}
+
+/* ---- Body: main column + sidebar ---- */
+
+.pv-body {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 48px;
+}
+
+@media screen and (min-width: 1024px) {
+    .pv-body {
+        grid-template-columns: minmax(0, 1fr) 360px;
+        gap: 64px;
+    }
+}
+
+.pv-section {
+    margin-bottom: 40px;
+}
+
+.pv-section h2 {
+    align-items: center;
+    display: flex;
+    font-size: 1.375rem;
+    font-weight: 500;
+    gap: 12px;
+    line-height: 1.75rem;
+    margin: 0 0 20px;
+}
+
+.pv-text {
+    color: var(--pv-muted);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin: 0 0 16px;
+    white-space: pre-line;
+}
+
+.pv-meta-label {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-top: 24px;
+}
+
+.pv-meta-value {
+    color: var(--pv-muted);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.pv-chip {
+    border: 1px solid var(--pv-line);
+    border-radius: 16px;
+    color: var(--pv-muted);
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 24px;
+    padding: 0 16px;
+}
+
+/* ---- Screenshots ---- */
+
+.pv-shots {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    padding: 2px 2px 12px;
+    scroll-snap-type: x proximity;
+}
+
+.pv-shot {
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    flex-shrink: 0;
+    height: 300px;
+    scroll-snap-align: start;
+}
+
+.pv-shot img {
+    border-radius: 8px;
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.pv-shot--empty {
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px dashed var(--pv-line);
+    box-shadow: none;
+    color: var(--pv-muted);
+    display: flex;
+    font-size: .75rem;
+    justify-content: center;
+    width: 140px;
+}
+
+/* ---- Data safety ---- */
+
+.pv-card {
+    border: 1px solid var(--pv-line);
+    border-radius: 8px;
+    padding: 20px 24px;
+}
+
+.pv-safety-item {
+    align-items: flex-start;
+    display: flex;
+    font-size: .875rem;
+    gap: 20px;
+    line-height: 1.25rem;
+    padding: 6px 0;
+}
+
+.pv-safety-item .material-icons {
+    color: var(--pv-muted);
+    font-size: 20px;
+}
+
+/* ---- Sidebar ---- */
+
+.pv-rated {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.pv-rated .pv-badge {
+    font-size: .875rem;
+    line-height: 24px;
+    padding: 0 4px;
+}
+
+.pv-rated-text {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.125rem;
+}
+
+.pv-support a {
+    align-items: center;
+    color: var(--pv-text);
+    display: flex;
+    font-size: .875rem;
+    gap: 16px;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.pv-support .material-icons {
+    color: var(--pv-muted);
+}
+
+/* ---- Small screens ---- */
+
+@media screen and (max-width: 839px) {
+    .pv-top {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+
+    .pv-icon {
+        height: 72px;
+        width: 72px;
+    }
+
+    .pv-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .pv-dev {
+        margin-top: 4px;
+    }
+
+    .pv-stats {
+        margin: 16px 0 20px;
+    }
+
+    .pv-shot {
+        height: 220px;
+    }
+
+    .pv-shot--empty {
+        width: 104px;
+    }
+
+    .pv-install {
+        min-width: 160px;
+    }
+}

@@ -2990,3 +2990,9 @@ c-wiz.Ubi8Z {
     cursor: default;
     pointer-events: none
 }
+
+/* Space below the last section on the home page */
+#gamesPanel,
+#appsPanel {
+    padding-bottom: 96px
+}

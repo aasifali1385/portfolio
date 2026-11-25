@@ -2,7 +2,7 @@
 //
 // To add a game: copy one { ... } block below, paste it after the last one
 // (with a comma between blocks) and change the values.
-// Fields: name, developer, link (or page: "folder" for a local page),
+// Fields: name, developer, link,
 //         banner, banner2x, icon, icon2x, rating ("" hides the stars).
 // See js/app-card.js for details.
 

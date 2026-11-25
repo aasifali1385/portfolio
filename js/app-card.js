@@ -10,9 +10,8 @@
  * App fields:
  *   name       App name (required)
  *   developer  Developer name shown under the app name (required)
- *   link       Play Store (or any) URL the card opens          } use one of
- *   page       Local page folder opened with openUrl(), e.g.   } link / page
- *              "bitgrow"
+ *   link       URL the card opens: the Play Store page, or the app's preview
+ *              page, e.g. "https://aasifali1385.github.io/portfolio/bitgrow"
  *   banner     Banner image URL (required)
  *   banner2x   Sharper banner for high-DPI screens (optional)
  *   icon       App icon URL (required)
@@ -31,9 +30,7 @@ function appCardHtml(app) {
     const esc = escapeHtml;
     const srcset = (x1, x2) => x2 ? `srcset="${esc(x2)} 2x"` : `srcset="${esc(x1)}"`;
 
-    const target = app.link
-        ? `href="${esc(app.link)}"`
-        : `href="javascript:void(0)" onclick="openUrl('${esc(app.page)}');"`;
+    const target = `href="${esc(app.link)}"`;
 
     const rating = app.rating ? `
                 <div class="ubGTjb">
