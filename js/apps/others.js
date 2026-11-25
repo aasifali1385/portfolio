@@ -18,11 +18,11 @@ addSection("Others", [
         rating: "4.4"
     },
     {
-        name: "Ludo Battle - Online Ludo",
+        name: "99 Store",
         developer: "A Developers",
-        link: BASE_URL + "ludobattle/",
-        banner: "images/banner_ludobattle.png",
-        icon: "images/ic_launcher_ludobattle.png",
+        link: BASE_URL + "store99/",
+        banner: "images/banner_99store.png",
+        icon: "images/ic_launcher_99store.png",
         rating: "4.5"
     },
     {
@@ -34,19 +34,19 @@ addSection("Others", [
         rating: "4.5"
     },
     {
+        name: "Ludo Battle - Online Ludo",
+        developer: "A Developers",
+        link: BASE_URL + "ludobattle/",
+        banner: "images/banner_ludobattle.png",
+        icon: "images/ic_launcher_ludobattle.png",
+        rating: "4.5"
+    },
+    {
         name: "TDS Battle - Free Fire",
         developer: "A Developers",
         link: BASE_URL + "tdsbattle/",
         banner: "images/banner_tdsbattle.png",
         icon: "images/ic_launcher_tdsbattle.png",
         rating: "4.3"
-    },
-    {
-        name: "99 Store",
-        developer: "A Developers",
-        link: BASE_URL + "store99/",
-        banner: "images/banner_99store.png",
-        icon: "images/ic_launcher_99store.png",
-        rating: "4.5"
     }
 ]);
