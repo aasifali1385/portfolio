@@ -2996,3 +2996,78 @@ c-wiz.Ubi8Z {
 #appsPanel {
     padding-bottom: 96px
 }
+
+/* Bottom navigation below 840px (Play's mobile menu). Fixed with icons on
+   touch screens; in a narrow mouse window it sits at the end of the page. */
+.P7NFWb {
+    background-color: #fff;
+    bottom: 0;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    left: 0;
+    position: static;
+    width: 100%;
+    z-index: 3
+}
+
+.yyaGpb {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.uEz1ib {
+    align-items: center;
+    color: #5f6368;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 112px;
+    text-decoration: none
+}
+
+.uEz1ib.VuUAje {
+    color: #01875f
+}
+
+.uEz1ib[aria-disabled="true"] {
+    opacity: .38;
+    pointer-events: none
+}
+
+.uEz1ib svg {
+    fill: currentColor
+}
+
+.jb05Ib {
+    display: none;
+    line-height: 0
+}
+
+.WL3b7c {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: .0178571em;
+    line-height: 1.25rem
+}
+
+@media (any-pointer: coarse), (any-pointer: none) {
+    .jb05Ib {
+        display: block
+    }
+
+    .P7NFWb {
+        border-top: 1px solid #dadce0;
+        height: 56px;
+        position: fixed
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .P7NFWb {
+        display: none
+    }
+}
