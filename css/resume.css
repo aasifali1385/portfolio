@@ -81,6 +81,11 @@
     }
 }
 
+/* Headline right under the name */
+.rs .pv-dev {
+    margin-top: 4px;
+}
+
 /* Less space between the Download CV button and About me */
 .rs .pv-body {
     margin-top: 32px;
@@ -149,10 +154,12 @@
 /* Mobile: photo next to the name; stats and Download button start at the left edge */
 @media screen and (max-width: 839px) {
     .rs .pv-top {
-        align-items: center;
         column-gap: 16px;
         display: grid;
+        row-gap: 0;
         grid-template-columns: 72px minmax(0, 1fr);
+        /* Name and headline sit together in the middle of the photo's height */
+        grid-template-rows: 1fr auto auto 1fr auto;
     }
 
     .rs .pv-info {
@@ -161,21 +168,23 @@
 
     .rs .rs-photo {
         grid-column: 1;
-        grid-row: 1 / span 2;
+        grid-row: 1 / 5;
     }
 
     .rs .pv-title {
-        align-self: end;
         grid-column: 2;
+        grid-row: 2;
     }
 
     .rs .pv-dev {
-        align-self: start;
         grid-column: 2;
+        grid-row: 3;
+        margin-top: 0;
     }
 
     .rs .rs-row {
         grid-column: 1 / -1;
+        grid-row: 5;
         margin-top: 16px;
     }
 
@@ -198,12 +207,15 @@
         white-space: nowrap;
     }
 
+    /* Button fills the rest of the row, so it ends at the same margin the page starts at */
     .rs-row .rs-buttons {
+        flex: 1;
         min-width: 0;
         padding-left: 12px;
     }
 
     .rs-row .pv-install {
+        flex: 1;
         min-width: 0;
         padding: 0 16px;
         white-space: nowrap;
