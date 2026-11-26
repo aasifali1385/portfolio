@@ -17,7 +17,7 @@ renderResume({
         "Application Developer with 4.5+ years of experience in mobile application development. " +
         "Skilled in Kotlin, Java and Flutter, building apps across e-commerce, health, education and finance domains.",
         "Strong background in Clean Architecture, REST APIs, third-party integrations and performance " +
-        "optimization to improv4e app stability and user experience."
+        "optimization to improve app stability and user experience."
     ],
 
     jobs: [
@@ -36,7 +36,7 @@ renderResume({
             role: "Android Developer",
             company: "Duplex Technologies Services Pvt. Ltd.",
             location: "Lucknow, India",
-            period: "Aug 2023 - July 2024",
+            period: "Aug 2023 - Jul 2024",
             points: [
                 "Developed 10+ applications across travel, astrology, hotel booking, e-commerce and trading domains",
                 "Implemented Clean Architecture and project modularization in Kotlin-based projects",
@@ -47,7 +47,7 @@ renderResume({
             role: "Android Developer",
             company: "CodeON Infosystem Pvt. Ltd.",
             location: "Lucknow, India",
-            period: "Apr 2022 - June 2023",
+            period: "Apr 2022 - Jun 2023",
             points: [
                 "Contributed to projects in HR management, e-commerce, health/nutrition and education domains",
                 "Developed features using Kotlin, MVVM architecture and Jetpack components",
@@ -57,9 +57,10 @@ renderResume({
     ],
 
     skills: [
-        {group: "Languages", items: ["Kotlin", "Java", "Dart", "XML"]},
-        {group: "Frameworks", items: ["Android SDK", "Flutter", "React Native"]},
-        {group: "Tools", items: ["Firebase", "REST APIs", "SQL", "Git", "Android Studio"]},
+        {group: "Languages", items: ["Kotlin", "Java", "Dart"]},
+        {group: "Frameworks", items: ["Android SDK", "Jetpack Compose", "Flutter", "React Native"]},
+        {group: "Libraries", items: ["Coroutines & Flow", "Retrofit", "Room", "Hilt", "WorkManager", "Socket.IO / WebSockets"]},
+        {group: "Tools", items: ["Firebase", "Crashlytics", "REST APIs", "SQL", "Git", "Android Studio", "Play Console publishing"]},
         {group: "Platforms", items: ["Android", "iOS (via Flutter)"]}
     ],
 
@@ -101,7 +102,7 @@ renderResume({
             school: "Disha Bharti College",
             location: "Noida, India",
             period: "2020",
-            grade: "Percentage: 70%"
+            grade: ""
         }
     ],
 
