@@ -70,6 +70,40 @@ renderResume({
     ],
 
     projects: [
+        // Website only (not in the .tex / PDF)
+        {
+            name: "Indo Berlin German School",
+            link: "https://play.google.com/store/apps/details?id=com.indoberlin.germanschool",
+            points: [
+                "German language learning app",
+                "AI-powered calls and chat to practise speaking and writing German"
+            ]
+        },
+        {
+            name: "Henry Harvin LMS",
+            link: "https://play.google.com/store/apps/details?id=com.henryharvin.learner.henry_harvin_learning",
+            points: [
+                "Learning management app for Henry Harvin students",
+                "25K+ downloads on Google Play"
+            ]
+        },
+        {
+            name: "Henry Harvin Chat",
+            link: "https://play.google.com/store/apps/details?id=com.henryharvin.hhchat",
+            points: [
+                "Messaging app for counsellors to send and manage messages to leads",
+                "Built on Meta's messaging APIs"
+            ]
+        },
+        {
+            name: "Virtual Card Holder",
+            link: "https://play.google.com/store/apps/details?id=com.aa.credit.card.wallet",
+            points: [
+                "Keeps your cards in one place, so you can manage them virtually",
+                "10K+ downloads on Google Play"
+            ]
+        },
+        // Also in the .tex / PDF
         {
             name: "Fluent German Club",
             tech: "Flutter, Firebase, Dart",

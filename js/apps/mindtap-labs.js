@@ -31,8 +31,8 @@ addSection("MindTap Labs", [
         name: "Virtual Card Holder",
         developer: "MindTap Labs",
         link: "https://play.google.com/store/apps/details?id=com.aa.credit.card.wallet",
-        banner: "https://play-lh.googleusercontent.com/QJxdftK74JugK6eNhQFGi1ul9sANEdE4-x5kZ2ym7yN5-RsA7H4e3NQuJeK0JoOX2Cw=w416-h235-rw",
-        banner2x: "https://play-lh.googleusercontent.com/QJxdftK74JugK6eNhQFGi1ul9sANEdE4-x5kZ2ym7yN5-RsA7H4e3NQuJeK0JoOX2Cw=w832-h470-rw",
+        banner: "https://play-lh.googleusercontent.com/pcsb/AEecphbAeramCz2c6GxIevvT6eB2KKUa-7cNvPrSHCEVIsxkpXCrUDGBOq5VlEQA1oizUkRWQ1FaLAoPgs6DfQIFOYmjQVrR1-tz=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/pcsb/AEecphbAeramCz2c6GxIevvT6eB2KKUa-7cNvPrSHCEVIsxkpXCrUDGBOq5VlEQA1oizUkRWQ1FaLAoPgs6DfQIFOYmjQVrR1-tz=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/hQC75g2SeOjdBT77qLUqOmQIM-erEwx73MMncfTUcPM_x5weJ1eUJfrhzOoYa-XI3uk=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/hQC75g2SeOjdBT77qLUqOmQIM-erEwx73MMncfTUcPM_x5weJ1eUJfrhzOoYa-XI3uk=s128-rw",
         rating: "5.0"
