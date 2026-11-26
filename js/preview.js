@@ -148,7 +148,82 @@ function renderPreview(app) {
 
     const script = document.currentScript;
     script.insertAdjacentHTML('beforebegin', html);
-    setUpScreenshotArrows(script.previousElementSibling.querySelector('.pv-shots-wrap'));
+    const wrap = script.previousElementSibling.querySelector('.pv-shots-wrap');
+    setUpScreenshotArrows(wrap);
+    setUpScreenshotViewer(wrap);
+}
+
+// Full-screen screenshot viewer: opens on click, with Previous/Next buttons,
+// arrow keys, swipe on touch screens, and Back / Esc / click outside to close.
+function setUpScreenshotViewer(wrap) {
+    const links = [...wrap.querySelectorAll('a.pv-shot')];
+    if (!links.length) return;
+    const sources = links.map((link) => link.getAttribute('href'));
+
+    document.body.insertAdjacentHTML('beforeend', `
+<div class="pv-viewer" role="dialog" aria-modal="true" aria-label="Screenshots" hidden>
+    <div class="pv-viewer-bar">
+        <button class="pv-viewer-close" type="button" aria-label="Close"><i class="material-icons" aria-hidden="true">arrow_back</i></button>
+    </div>
+    <div class="pv-viewer-stage">
+        <img class="pv-viewer-img" alt="Screenshot">
+    </div>
+    <button class="pv-arrow pv-viewer-prev" type="button" aria-label="Previous"><i class="material-icons" aria-hidden="true">chevron_left</i></button>
+    <button class="pv-arrow pv-viewer-next" type="button" aria-label="Next"><i class="material-icons" aria-hidden="true">chevron_right</i></button>
+</div>`);
+    const viewer = document.body.lastElementChild;
+    const img = viewer.querySelector('.pv-viewer-img');
+    const prev = viewer.querySelector('.pv-viewer-prev');
+    const next = viewer.querySelector('.pv-viewer-next');
+    const close = viewer.querySelector('.pv-viewer-close');
+    let index = 0;
+
+    const show = (i) => {
+        index = Math.max(0, Math.min(sources.length - 1, i));
+        img.src = sources[index];
+        img.alt = `Screenshot ${index + 1} of ${sources.length}`;
+        prev.hidden = index === 0;
+        next.hidden = index === sources.length - 1;
+    };
+    const open = (i) => {
+        show(i);
+        viewer.hidden = false;
+        document.documentElement.style.overflow = 'hidden';
+        close.focus();
+    };
+    const shut = () => {
+        viewer.hidden = true;
+        document.documentElement.style.overflow = '';
+        links[index].focus({preventScroll: true});
+    };
+
+    links.forEach((link, i) => link.addEventListener('click', (event) => {
+        event.preventDefault();
+        open(i);
+    }));
+    prev.addEventListener('click', () => show(index - 1));
+    next.addEventListener('click', () => show(index + 1));
+    close.addEventListener('click', shut);
+    // Clicking the dark area around the screenshot closes the viewer
+    viewer.querySelector('.pv-viewer-stage').addEventListener('click', (event) => {
+        if (event.target !== img) shut();
+    });
+    document.addEventListener('keydown', (event) => {
+        if (viewer.hidden) return;
+        if (event.key === 'Escape') shut();
+        else if (event.key === 'ArrowLeft') show(index - 1);
+        else if (event.key === 'ArrowRight') show(index + 1);
+    });
+
+    // Swipe left/right on touch screens
+    let startX = null;
+    viewer.addEventListener('touchstart', (event) => startX = event.touches[0].clientX, {passive: true});
+    viewer.addEventListener('touchend', (event) => {
+        if (startX === null) return;
+        const dx = event.changedTouches[0].clientX - startX;
+        startX = null;
+        if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+    });
 }
 
 // Left/right arrows on the screenshot strip, shown only when there is more to scroll to.
