@@ -19,6 +19,17 @@
  *   education   List of {degree, school, period, location, grade}
  *   email, phone, linkedin, github, website   Contact details in the sidebar
  */
+/*
+ * Experience counted from the month you started, rounded down to the half year,
+ * e.g. experienceSince(2022, 4) gives "4.5+ years" in Nov 2026 and "5+ years" from Apr 2027.
+ */
+function experienceSince(year, month) {
+    const now = new Date();
+    const months = (now.getFullYear() - year) * 12 + (now.getMonth() + 1 - month);
+    const years = Math.floor(months / 6) / 2;
+    return `${years}+ years`;
+}
+
 function renderResume(me) {
     const esc = (value) => String(value)
         .replace(/&/g, '&amp;')
@@ -103,7 +114,6 @@ function renderResume(me) {
         if (value) contact.push(`<a href="${esc(href)}"${href.startsWith('http') ? ' target="_blank" rel="noopener"' : ''}><i class="material-icons" aria-hidden="true">${iconName}</i>${esc(text || value)}</a>`);
     };
     add(me.email, 'email', 'mailto:' + me.email);
-    add(me.phone, 'phone', 'tel:' + String(me.phone || '').replace(/\s+/g, ''));
     add(me.linkedin, 'work', me.linkedin, 'LinkedIn');
     add(me.github, 'code', me.github, 'GitHub');
     add(me.website, 'language', me.website, 'Website');
