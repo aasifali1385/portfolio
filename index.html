@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/preview.css">
+    <link rel="stylesheet" href="css/resume.css">
     <script src="js/header.js"></script>
     <script src="js/app-card.js"></script>
+    <script src="js/resume.js"></script>
 </head>
 
 <body>
@@ -37,11 +40,17 @@
     <script src="js/apps/others.js"></script>
 </div>
 
+<!-- About Me tab: your details are in js/resume-details.js -->
+<div id="aboutPanel" hidden>
+    <script src="js/resume-details.js"></script>
+</div>
+
 <script>
-    // Games / Apps tabs
+    // Games / Apps / About Me tabs
     const tabs = {
         games: {button: document.getElementById('gamesTab'), panel: document.getElementById('gamesPanel')},
-        apps: {button: document.getElementById('appsTab'), panel: document.getElementById('appsPanel')}
+        apps: {button: document.getElementById('appsTab'), panel: document.getElementById('appsPanel')},
+        about: {button: document.getElementById('aboutTab'), panel: document.getElementById('aboutPanel')}
     };
 
     function showTab(name) {
@@ -61,8 +70,9 @@
         tabs[key].button.addEventListener('click', () => showTab(key));
     }
 
-    // Preview pages link back with #games to open the Games tab
-    if (location.hash === '#games') showTab('games');
+    // Preview pages link back with #games or #about to open that tab (#resume still works)
+    const startTab = location.hash.slice(1) === 'resume' ? 'about' : location.hash.slice(1);
+    if (startTab in tabs) showTab(startTab);
 </script>
 
 </body>

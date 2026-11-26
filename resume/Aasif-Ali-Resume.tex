@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting (a little more air above each section)
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+% Bullet points: small text with a bit of space between them for readability
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=4pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aasif Ali} \\ \vspace{6pt}
+    \small +91 8266817572 $|$
+    \href{mailto:aasifali1385@gmail.com}{\underline{aasifali1385@gmail.com}} $|$
+    \href{https://linkedin.com/in/aasifali1385}{\underline{linkedin.com/in/aasifali1385}} $|$
+    \href{https://aasifali1385.github.io/portfolio}{\underline{aasifali1385.github.io/portfolio}} $|$
+    Noida, India
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+\textbf{Android Developer} with \textbf{4.5+ years} of experience in mobile application development.
+Skilled in \textbf{Kotlin}, \textbf{Java} and \textbf{Flutter}, building apps across
+\textbf{e-commerce, health, education and finance} domains. Strong background in
+\textbf{Clean Architecture}, \textbf{REST APIs}, third-party integrations and
+\textbf{performance optimization} to improve app stability and user experience.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Application Developer}{Aug 2024 -- Present}
+      {Henry Harvin Education}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{Developed internal \textbf{HR management systems} and \textbf{CRM platforms} using \textbf{Kotlin} and \textbf{Flutter}}
+        \resumeItem{Built \textbf{language learning applications} with interactive features and \textbf{real-time synchronization}}
+        \resumeItem{Optimized app performance, \textbf{reducing crash rates by 40\%} through code improvements}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Android Developer}{Aug 2023 -- July 2024}
+      {Duplex Technologies Services Pvt. Ltd.}{Lucknow, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{10+ applications} across travel, astrology, hotel booking, e-commerce and trading domains}
+        \resumeItem{Implemented \textbf{Clean Architecture} and \textbf{project modularization} in \textbf{Kotlin}-based projects}
+        \resumeItem{Integrated payment gateways (\textbf{Razorpay}, \textbf{Stripe}) and third-party APIs (\textbf{Google Maps}, \textbf{Firebase})}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Android Developer}{Apr 2022 -- June 2023}
+      {CodeON Infosystem Pvt. Ltd.}{Lucknow, India}
+      \resumeItemListStart
+        \resumeItem{Contributed to projects in \textbf{HR management, e-commerce, health/nutrition and education} domains}
+        \resumeItem{Developed features using \textbf{Kotlin}, \textbf{MVVM} architecture and \textbf{Jetpack} components}
+        \resumeItem{Integrated \textbf{Firebase} services (Authentication, Firestore, Cloud Messaging)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Kotlin, Java, Dart, XML} \\[2pt]
+     \textbf{Frameworks}{: Android SDK, Flutter, React Native} \\[2pt]
+     \textbf{Tools}{: Firebase, REST APIs, SQL, Git, Android Studio} \\[2pt]
+     \textbf{Platforms}{: Android, iOS (via Flutter)}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Fluent German Club} $|$ \emph{Flutter, Firebase, Dart} $|$ Google Play}{2024}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{German language learning platform} with interactive lessons and quizzes}
+            \resumeItem{Implemented \textbf{progress tracking}, \textbf{cloud sync} and \textbf{offline mode} support}
+            \resumeItem{Integrated user authentication, \textbf{in-app purchases} and real-time data storage through \textbf{Firebase}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{PetZoo} $|$ \emph{Kotlin, MVVM, Google Maps API, Firebase, Razorpay}}{2023}
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{location-based Android app} to connect users with nearby pets}
+            \resumeItem{Integrated \textbf{Google Maps API} for real-time nearby pet discovery and \textbf{REST APIs} for dynamic content}
+            \resumeItem{Integrated \textbf{Razorpay} payment gateway and \textbf{Firebase push notifications} for user engagement}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chandigarh University}{Punjab, India}
+      {Master of Computer Applications (MCA) -- 2022}{CGPA: \textbf{8.45}}
+    \resumeSubheading
+      {Disha Bharti College}{Noida, India}
+      {Bachelor of Computer Applications (BCA) -- 2020}{Percentage: \textbf{70\%}}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

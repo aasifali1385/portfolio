@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Updated icons and banners" />
+    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Added screenshots preview">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/games/mindtap-studios.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/games/mindtap-studios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/header.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -177,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795672906704</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added screenshots preview">
+      <option name="closed" value="true" />
+      <created>1795694109199</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1795694109199</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +199,7 @@
     <MESSAGE value="Commit on 26 Nov 2026" />
     <MESSAGE value="Added bottom navigation" />
     <MESSAGE value="Updated icons and banners" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated icons and banners" />
+    <MESSAGE value="Added screenshots preview" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added screenshots preview" />
   </component>
 </project>
