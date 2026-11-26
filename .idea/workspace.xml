@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Added bottom navigation">
-      <change beforePath="$PROJECT_DIR$/images/banner_educloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/banner_educloud.png" afterDir="false" />
+    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Updated icons and banners">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/apps/henry-harvin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/apps/henry-harvin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +172,22 @@
       <option name="project" value="LOCAL" />
       <updated>1795671612435</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated icons and banners">
+      <option name="closed" value="true" />
+      <created>1795672906704</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1795672906704</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit on 25 Nov 2026" />
     <MESSAGE value="Commit on 26 Nov 2026" />
     <MESSAGE value="Added bottom navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bottom navigation" />
+    <MESSAGE value="Updated icons and banners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated icons and banners" />
   </component>
 </project>

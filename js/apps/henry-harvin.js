@@ -70,8 +70,8 @@ addSection("Henry Harvin", [
         name: "Hydra Task",
         developer: "Henry Harvin",
         link: "https://play.google.com/store/apps/details?id=com.hundredxsuite.hydratask",
-        banner: "https://play-lh.googleusercontent.com/K0_E_lTLRz4Xc8yEQdSbO8DxpqFpdx48WY8AHSteyggjPjzW4WSAuz6lk1X2r5C-Pw=w416-h235-rw",
-        banner2x: "https://play-lh.googleusercontent.com/K0_E_lTLRz4Xc8yEQdSbO8DxpqFpdx48WY8AHSteyggjPjzW4WSAuz6lk1X2r5C-Pw=w832-h470-rw",
+        banner: "https://play-lh.googleusercontent.com/pcsb/AEecphaXHRnbakbJZ08uI6lt7oIxzvqUl_Tpje1US-o-p91b6ZjDKp4Mu3e2XNVUtJ8xIrc3jT5PLdsAZKQSrRRmLK3KA20s=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/pcsb/AEecphaXHRnbakbJZ08uI6lt7oIxzvqUl_Tpje1US-o-p91b6ZjDKp4Mu3e2XNVUtJ8xIrc3jT5PLdsAZKQSrRRmLK3KA20s=w832-h470-rw",
         icon: "https://play-lh.googleusercontent.com/WGXAFGzQ-qdLoyDEOwzR8DEsC1bTdrXCxdYnql9TEORk6HRlQWGcux7TDZppoLXjQA=s64-rw",
         icon2x: "https://play-lh.googleusercontent.com/WGXAFGzQ-qdLoyDEOwzR8DEsC1bTdrXCxdYnql9TEORk6HRlQWGcux7TDZppoLXjQA=s128-rw",
         rating: "4.0"
