@@ -4,11 +4,15 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
+% Aasif Ali - Android & Flutter Application Developer
+% Page is 8.5in x 15in (one long page), as in Aasif_Ali_Resume.pdf
+% Build: pdflatex Aasif-Ali-Resume.tex, then save the PDF as resume/Aasif-Ali-Resume.pdf
+%------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[11pt]{article}
 
+\usepackage[paperwidth=8.5in, paperheight=15in, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -39,20 +43,13 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting (a little more air above each section)
+% Sections formatting
 \titleformat{\section}{
   \vspace{2pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
@@ -62,43 +59,35 @@
 
 %-------------------------
 % Custom commands
-% Bullet points: small text with a bit of space between them for readability
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{0pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
+% Job: role and dates on the first line, company and place (italic) on the second
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
+% Project or degree: one line, with the year on the right
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=4pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,23 +98,27 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Aasif Ali} \\ \vspace{6pt}
-    \small +91 8266817572 $|$
+    \textbf{\Huge \scshape Aasif Ali} \\ \vspace{2pt}
+    \large Android \& Flutter Application Developer \\ \vspace{4pt}
+    \small \href{tel:+918266817572}{+91 8266817572} $|$
     \href{mailto:aasifali1385@gmail.com}{\underline{aasifali1385@gmail.com}} $|$
     \href{https://linkedin.com/in/aasifali1385}{\underline{linkedin.com/in/aasifali1385}} $|$
     \href{https://aasifali1385.github.io/portfolio}{\underline{aasifali1385.github.io/portfolio}} $|$
     Noida, India
 \end{center}
 
+
 %-----------SUMMARY-----------
-\section{Summary}
+\section{Professional Summary}
 \small{
-\textbf{Application Developer} with \textbf{4.5+ years} of experience in mobile application development
-and \textbf{30+ apps published on Google Play}. Skilled in \textbf{Kotlin}, \textbf{Jetpack Compose}, \textbf{Java} and \textbf{Flutter}, building apps across
-\textbf{e-commerce, health, education and finance} domains. Strong background in
-\textbf{Clean Architecture}, \textbf{REST APIs}, third-party integrations and
-\textbf{performance optimization} to improve app stability and user experience.
+Results-driven \textbf{Application Developer} with \textbf{4.5+ years} of experience in \textbf{native Android and cross-platform mobile
+app development}, with \textbf{40+ apps published on Google Play}. Hands-on expertise in \textbf{Kotlin, Java, Jetpack Compose,
+Flutter and Dart}, delivering production apps across \textbf{e-commerce, healthcare, EdTech, travel and fintech} domains.
+Strong command of \textbf{Clean Architecture, MVVM, REST API integration, Firebase, payment gateway integration} and
+\textbf{real-time communication (Socket.IO / WebSockets)}. Focused on writing scalable, maintainable code and improving \textbf{app
+performance, stability and user experience} through crash monitoring and root-cause fixes.
 }
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -135,75 +128,83 @@ and \textbf{30+ apps published on Google Play}. Skilled in \textbf{Kotlin}, \tex
       {Application Developer}{Aug 2024 -- Present}
       {Henry Harvin Education}{Noida, India}
       \resumeItemListStart
-        \resumeItem{Built internal \textbf{HR management} and \textbf{CRM} apps using \textbf{Kotlin}, \textbf{Jetpack Compose} and \textbf{Flutter}}
-        \resumeItem{Shipped \textbf{language learning apps} with interactive lessons and \textbf{real-time sync}, using \textbf{Hilt}, \textbf{Room} and \textbf{Coroutines \& Flow}}
-        \resumeItem{Built \textbf{real-time messaging} for the Henry Harvin Chat app with \textbf{Socket.IO}}
-        \resumeItem{\textbf{Cut crash rates by 40\%} by tracking issues in \textbf{Firebase Crashlytics} and fixing the top causes}
+        \resumeItem{Designed and developed internal \textbf{HR Management System} and \textbf{CRM mobile apps} in \textbf{Flutter} using \textbf{GetX} for state management, routing and dependency injection, giving HR and sales teams a single mobile tool for daily operations.}
+        \resumeItem{Integrated backend \textbf{RESTful APIs} for employee records, attendance, lead tracking and follow-ups, with structured \textbf{error handling}, loading states and form validation for a reliable user experience.}
+        \resumeItem{Built and shipped \textbf{language learning apps} featuring interactive lessons, quizzes and \textbf{real-time progress sync} with \textbf{Firebase}, keeping learner data consistent across devices.}
+        \resumeItem{Applied \textbf{Bloc} and \textbf{GetX} state management patterns to separate UI from business logic, making screens predictable, testable and easier to extend with new course content.}
+        \resumeItem{Developed \textbf{real-time messaging} for the \textbf{Henry Harvin Chat} app using \textbf{Socket.IO}, handling live message delivery, socket connection lifecycle and \textbf{reconnection} on unstable networks.}
+        \resumeItem{\textbf{Reduced app crash rate by 30\%} by monitoring \textbf{Firebase Crashlytics} and fixing the top root causes by user impact, improving \textbf{app stability}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Android Developer}{Aug 2023 -- Jul 2024}
       {Duplex Technologies Services Pvt. Ltd.}{Lucknow, India}
       \resumeItemListStart
-        \resumeItem{Delivered \textbf{10+ apps} across travel, astrology, hotel booking, e-commerce and trading domains}
-        \resumeItem{Set up \textbf{Clean Architecture} and \textbf{modular Kotlin projects} with \textbf{Retrofit}, \textbf{Room} and \textbf{WorkManager}}
-        \resumeItem{Integrated payment gateways (\textbf{Razorpay}, \textbf{Stripe}) and third-party APIs (\textbf{Google Maps}, \textbf{Firebase})}
+        \resumeItem{Delivered \textbf{10+ client Android apps} end to end across \textbf{travel, astrology, hotel booking, e-commerce and trading} domains, from requirement analysis to \textbf{Google Play Store release}.}
+        \resumeItem{Set up \textbf{Clean Architecture} with \textbf{modular Kotlin} projects (data, domain and presentation layers), enabling code reuse across client apps and faster delivery of new features.}
+        \resumeItem{Implemented the networking layer with \textbf{Retrofit} and \textbf{Kotlin Coroutines}, and local persistence with the \textbf{Room} database for \textbf{offline support} and faster screen loads.}
+        \resumeItem{Scheduled reliable background tasks such as data sync and reminders with \textbf{WorkManager}, respecting Android battery and background-execution limits.}
+        \resumeItem{Integrated \textbf{payment gateways (Razorpay, Stripe)} for secure in-app checkout, and third-party SDKs including \textbf{Google Maps API} and \textbf{Firebase} for location, analytics and push notifications.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Android Developer}{Apr 2022 -- Jun 2023}
       {CodeON Infosystem Pvt. Ltd.}{Lucknow, India}
       \resumeItemListStart
-        \resumeItem{Built client apps for \textbf{HR management, e-commerce, health/nutrition and education} businesses}
-        \resumeItem{Wrote features in \textbf{Kotlin} with \textbf{MVVM} architecture and \textbf{Jetpack} components}
-        \resumeItem{Added \textbf{Firebase} Authentication, Firestore and Cloud Messaging to client apps}
+        \resumeItem{Developed client Android apps for \textbf{HR management, e-commerce, health \& nutrition and education} businesses, translating client requirements into working features.}
+        \resumeItem{Wrote features in \textbf{Kotlin} following the \textbf{MVVM architecture} with \textbf{Android Jetpack components} (ViewModel, LiveData, Navigation) for lifecycle-aware, maintainable code.}
+        \resumeItem{Implemented \textbf{Firebase Authentication} for secure user sign-in and \textbf{Cloud Firestore} for real-time cloud data sync.}
+        \resumeItem{Added \textbf{Firebase Cloud Messaging (FCM) push notifications} to keep users informed about orders, updates and reminders, improving user engagement.}
+        \resumeItem{Consumed \textbf{REST APIs}, built responsive \textbf{UI layouts} and fixed bugs to keep \textbf{Google Play Store} releases stable.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Kotlin, Java, Dart} \\[2pt]
-     \textbf{Frameworks}{: Android SDK, Jetpack Compose, Flutter} \\[2pt]
-     \textbf{Libraries}{: Coroutines \& Flow, Retrofit, Room, Hilt, WorkManager, Socket.IO / WebSockets} \\[2pt]
-     \textbf{Tools}{: Firebase, Crashlytics, REST APIs, SQL, Git, Android Studio, Play Console publishing} \\[2pt]
-     \textbf{Platforms}{: Android, iOS (via Flutter)}
-    }}
- \end{itemize}
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Fluent German Club} $|$ \emph{Flutter, Firebase, Dart} $|$ Google Play}{2024}
+          {\textbf{Fluent German Club} $|$ \emph{Flutter, Dart, Firebase} $|$ \href{https://play.google.com/store/apps/details?id=com.henryharvin.fluentgermanclub}{\emph{Google Play}}}{2024}
           \resumeItemListStart
-            \resumeItem{Built a \textbf{German language learning app} with interactive lessons and quizzes}
-            \resumeItem{Implemented \textbf{progress tracking}, \textbf{cloud sync} and \textbf{offline mode} support}
-            \resumeItem{Set up user sign-in, \textbf{in-app purchases} and real-time data storage with \textbf{Firebase}}
+            \resumeItem{Built a cross-platform \textbf{German language learning app} in \textbf{Flutter} with interactive lessons and quizzes.}
+            \resumeItem{Implemented learner \textbf{progress tracking} with \textbf{cloud sync} via Firebase, so progress carries over across devices.}
+            \resumeItem{Added \textbf{offline mode} support so learners can continue lessons without an internet connection.}
+            \resumeItem{Set up \textbf{Firebase Authentication}, \textbf{in-app purchases} for premium content and \textbf{real-time data storage}.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{PetZoo} $|$ \emph{Kotlin, MVVM, Google Maps API, Firebase, Razorpay}}{2023}
           \resumeItemListStart
-            \resumeItem{Built a \textbf{location-based Android app} that connects users with nearby pets}
-            \resumeItem{Used the \textbf{Google Maps API} for real-time nearby pet discovery and \textbf{REST APIs} for dynamic content}
-            \resumeItem{Added \textbf{Razorpay} payments and \textbf{Firebase push notifications} to keep users engaged}
+            \resumeItem{Built a \textbf{location-based Android app} in \textbf{Kotlin} that connects users with nearby pets, following the \textbf{MVVM architecture}.}
+            \resumeItem{Used the \textbf{Google Maps API} for \textbf{real-time nearby pet discovery} with map markers based on user location.}
+            \resumeItem{Consumed \textbf{REST APIs} to load dynamic content such as pet listings, details and categories.}
+            \resumeItem{Integrated \textbf{Razorpay payments} and \textbf{Firebase push notifications} to drive transactions and user engagement.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Platforms}{: Kotlin, Java, Dart, SQL $|$ Android, iOS (via Flutter)} \\[2pt]
+     \textbf{Frameworks \& Architecture}{: Android SDK, Jetpack Compose, Flutter, Clean Architecture, MVVM, Bloc, GetX} \\[2pt]
+     \textbf{Libraries}{: Coroutines \& Flow, Retrofit, Room, Hilt, WorkManager, Socket.IO / WebSockets} \\[2pt]
+     \textbf{Tools}{: Firebase, Crashlytics, REST APIs, Git, Android Studio, Play Console publishing}
+    }}
+ \end{itemize}
+
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Chandigarh University}{Punjab, India}
-      {Master of Computer Applications (MCA) -- 2022}{CGPA: \textbf{8.45}}
-    \resumeSubheading
-      {Disha Bharti College}{Noida, India}
-      {Bachelor of Computer Applications (BCA) -- 2020}{}
+    \resumeProjectHeading
+      {\textbf{Master of Computer Applications (MCA)} -- Chandigarh University, Punjab $|$ CGPA: 8.45}{2022}
+    \resumeProjectHeading
+      {\textbf{Bachelor of Computer Applications (BCA)} -- Disha Bharti College, Noida}{2020}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------

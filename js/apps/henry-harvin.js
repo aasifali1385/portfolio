@@ -46,13 +46,13 @@ addSection("Henry Harvin", [
         rating: "3.7"
     },
     {
-        name: "Henry Harvin HR",
+        name: "Zendra HR",
         developer: "Henry Harvin",
         link: "https://play.google.com/store/apps/details?id=com.hws_hr.www",
-        banner: "https://play-lh.googleusercontent.com/iMHbtUTc0pEFAKHqi2Xz2b92HwwQta4U6Jj3aXztTVO2N45nGU-aY1W9t6MEsixepCc=w416-h235-rw",
-        banner2x: "https://play-lh.googleusercontent.com/iMHbtUTc0pEFAKHqi2Xz2b92HwwQta4U6Jj3aXztTVO2N45nGU-aY1W9t6MEsixepCc=w832-h470-rw",
-        icon: "https://play-lh.googleusercontent.com/Bl6F-lel-XPd1P2agbp7ZTRfnyb1Wepf_u1zRjrQdN72xx1QvuEyigs2q-eZ9RyR2EE=s64-rw",
-        icon2x: "https://play-lh.googleusercontent.com/Bl6F-lel-XPd1P2agbp7ZTRfnyb1Wepf_u1zRjrQdN72xx1QvuEyigs2q-eZ9RyR2EE=s128-rw",
+        banner: "https://play-lh.googleusercontent.com/pcsb/AEecphbkW0URTKx5X_nbVepjaYtdjcGbrKmStQPqtRw_-Wo2HLbItITdI0f_HNaKysQNOl4TwzafwmeW61ZRcSexaexkns9LxQ=w416-h235-rw",
+        banner2x: "https://play-lh.googleusercontent.com/pcsb/AEecphbkW0URTKx5X_nbVepjaYtdjcGbrKmStQPqtRw_-Wo2HLbItITdI0f_HNaKysQNOl4TwzafwmeW61ZRcSexaexkns9LxQ=w832-h470-rw",
+        icon: "https://play-lh.googleusercontent.com/pcsb/AEecpha25o1PyaW0qnia-sJ1S8qy-eghLvgbDUIiaTrkrP_XMCYW4c7ZhFsWmP2QiEvmoR-iSjLVLZG5D5JO_Ok52Ded4vyvcQ=s64-rw",
+        icon2x: "https://play-lh.googleusercontent.com/pcsb/AEecpha25o1PyaW0qnia-sJ1S8qy-eghLvgbDUIiaTrkrP_XMCYW4c7ZhFsWmP2QiEvmoR-iSjLVLZG5D5JO_Ok52Ded4vyvcQ=s128-rw",
         rating: "4.2"
     },
     {

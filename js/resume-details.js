@@ -1,7 +1,7 @@
 // Resume tab (home page)
 //
 // Same content as resume/Aasif-Ali-Resume.tex. When you change one, change the other,
-// then rebuild the PDF from the .tex file and save it as resume/Aasif-Ali-Resume.pdf
+// then compile the .tex file and save the PDF as resume/Aasif-Ali-Resume.pdf
 // (the Download Resume button serves that file).
 // Anything left empty ("" or []) is hidden. See js/resume.js for every field.
 
@@ -10,18 +10,20 @@ const EXPERIENCE = experienceSince(2022, 4);
 
 renderResume({
     name: "Aasif Ali",
-    headline: "Application Developer",
+    headline: "Android & Flutter Application Developer",
     photo: "",
     location: "Noida, India",
     experience: EXPERIENCE,
     cv: "resume/Aasif-Ali-Resume.pdf",
 
     about: [
-        "Application Developer with " + EXPERIENCE + " of experience in mobile application development " +
-        "and 30+ apps published on Google Play. Skilled in Kotlin, Jetpack Compose, Java and Flutter, " +
-        "building apps across e-commerce, health, education and finance domains.",
-        "Strong background in Clean Architecture, REST APIs, third-party integrations and performance " +
-        "optimization to improve app stability and user experience."
+        "Results-driven Application Developer with " + EXPERIENCE + " of experience in native Android and " +
+        "cross-platform mobile app development, with 40+ apps published on Google Play. Hands-on expertise in " +
+        "Kotlin, Java, Jetpack Compose, Flutter and Dart, delivering production apps across e-commerce, " +
+        "healthcare, EdTech, travel and fintech domains.",
+        "Strong command of Clean Architecture, MVVM, REST API integration, Firebase, payment gateway integration " +
+        "and real-time communication (Socket.IO / WebSockets). Focused on writing scalable, maintainable code and " +
+        "improving app performance, stability and user experience through crash monitoring and root-cause fixes."
     ],
 
     jobs: [
@@ -31,10 +33,12 @@ renderResume({
             location: "Noida, India",
             period: "Aug 2024 - Present",
             points: [
-                "Built internal HR management and CRM apps using Kotlin, Jetpack Compose and Flutter",
-                "Shipped language learning apps with interactive lessons and real-time sync, using Hilt, Room and Coroutines & Flow",
-                "Built real-time messaging for the Henry Harvin Chat app with Socket.IO",
-                "Cut crash rates by 40% by tracking issues in Firebase Crashlytics and fixing the top causes"
+                "Designed and developed internal HR Management System and CRM mobile apps in Flutter using GetX for state management, routing and dependency injection, giving HR and sales teams a single mobile tool for daily operations.",
+                "Integrated backend RESTful APIs for employee records, attendance, lead tracking and follow-ups, with structured error handling, loading states and form validation for a reliable user experience.",
+                "Built and shipped language learning apps featuring interactive lessons, quizzes and real-time progress sync with Firebase, keeping learner data consistent across devices.",
+                "Applied Bloc and GetX state management patterns to separate UI from business logic, making screens predictable, testable and easier to extend with new course content.",
+                "Developed real-time messaging for the Henry Harvin Chat app using Socket.IO, handling live message delivery, socket connection lifecycle and reconnection on unstable networks.",
+                "Reduced app crash rate by 30% by monitoring Firebase Crashlytics and fixing the top root causes by user impact, improving app stability."
             ]
         },
         {
@@ -43,9 +47,11 @@ renderResume({
             location: "Lucknow, India",
             period: "Aug 2023 - Jul 2024",
             points: [
-                "Delivered 10+ apps across travel, astrology, hotel booking, e-commerce and trading domains",
-                "Set up Clean Architecture and modular Kotlin projects with Retrofit, Room and WorkManager",
-                "Integrated payment gateways (Razorpay, Stripe) and third-party APIs (Google Maps, Firebase)"
+                "Delivered 10+ client Android apps end to end across travel, astrology, hotel booking, e-commerce and trading domains, from requirement analysis to Google Play Store release.",
+                "Set up Clean Architecture with modular Kotlin projects (data, domain and presentation layers), enabling code reuse across client apps and faster delivery of new features.",
+                "Implemented the networking layer with Retrofit and Kotlin Coroutines, and local persistence with the Room database for offline support and faster screen loads.",
+                "Scheduled reliable background tasks such as data sync and reminders with WorkManager, respecting Android battery and background-execution limits.",
+                "Integrated payment gateways (Razorpay, Stripe) for secure in-app checkout, and third-party SDKs including Google Maps API and Firebase for location, analytics and push notifications."
             ]
         },
         {
@@ -54,19 +60,20 @@ renderResume({
             location: "Lucknow, India",
             period: "Apr 2022 - Jun 2023",
             points: [
-                "Built client apps for HR management, e-commerce, health/nutrition and education businesses",
-                "Wrote features in Kotlin with MVVM architecture and Jetpack components",
-                "Added Firebase Authentication, Firestore and Cloud Messaging to client apps"
+                "Developed client Android apps for HR management, e-commerce, health & nutrition and education businesses, translating client requirements into working features.",
+                "Wrote features in Kotlin following the MVVM architecture with Android Jetpack components (ViewModel, LiveData, Navigation) for lifecycle-aware, maintainable code.",
+                "Implemented Firebase Authentication for secure user sign-in and Cloud Firestore for real-time cloud data sync.",
+                "Added Firebase Cloud Messaging (FCM) push notifications to keep users informed about orders, updates and reminders, improving user engagement.",
+                "Consumed REST APIs, built responsive UI layouts and fixed bugs to keep Google Play Store releases stable."
             ]
         }
     ],
 
     skills: [
-        {group: "Languages", items: ["Kotlin", "Java", "Dart"]},
-        {group: "Frameworks", items: ["Android SDK", "Jetpack Compose", "Flutter"]},
+        {group: "Languages & Platforms", items: ["Kotlin", "Java", "Dart", "SQL", "Android", "iOS (via Flutter)"]},
+        {group: "Frameworks & Architecture", items: ["Android SDK", "Jetpack Compose", "Flutter", "Clean Architecture", "MVVM", "Bloc", "GetX"]},
         {group: "Libraries", items: ["Coroutines & Flow", "Retrofit", "Room", "Hilt", "WorkManager", "Socket.IO / WebSockets"]},
-        {group: "Tools", items: ["Firebase", "Crashlytics", "REST APIs", "SQL", "Git", "Android Studio", "Play Console publishing"]},
-        {group: "Platforms", items: ["Android", "iOS (via Flutter)"]}
+        {group: "Tools", items: ["Firebase", "Crashlytics", "REST APIs", "Git", "Android Studio", "Play Console publishing"]}
     ],
 
     projects: [
@@ -106,13 +113,14 @@ renderResume({
         // Also in the .tex / PDF
         {
             name: "Fluent German Club",
-            tech: "Flutter, Firebase, Dart",
+            tech: "Flutter, Dart, Firebase",
             year: "2024",
             link: "https://play.google.com/store/apps/details?id=com.henryharvin.fluentgermanclub",
             points: [
-                "Built a German language learning app with interactive lessons and quizzes",
-                "Implemented progress tracking, cloud sync and offline mode support",
-                "Set up user sign-in, in-app purchases and real-time data storage with Firebase"
+                "Built a cross-platform German language learning app in Flutter with interactive lessons and quizzes.",
+                "Implemented learner progress tracking with cloud sync via Firebase, so progress carries over across devices.",
+                "Added offline mode support so learners can continue lessons without an internet connection.",
+                "Set up Firebase Authentication, in-app purchases for premium content and real-time data storage."
             ]
         },
         {
@@ -121,9 +129,10 @@ renderResume({
             year: "2023",
             link: BASE_URL + "petzoo/",
             points: [
-                "Built a location-based Android app that connects users with nearby pets",
-                "Used the Google Maps API for real-time nearby pet discovery and REST APIs for dynamic content",
-                "Added Razorpay payments and Firebase push notifications to keep users engaged"
+                "Built a location-based Android app in Kotlin that connects users with nearby pets, following the MVVM architecture.",
+                "Used the Google Maps API for real-time nearby pet discovery with map markers based on user location.",
+                "Consumed REST APIs to load dynamic content such as pet listings, details and categories.",
+                "Integrated Razorpay payments and Firebase push notifications to drive transactions and user engagement."
             ]
         }
     ],

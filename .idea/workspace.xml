@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Added 'About Me' section">
+    <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Added Projects in About Me">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/apps/henry-harvin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/apps/henry-harvin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resume-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/resume-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795718607266</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added Projects in About Me">
+      <option name="closed" value="true" />
+      <created>1795719708284</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1795719708284</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +242,7 @@
     <MESSAGE value="Updated icons and banners" />
     <MESSAGE value="Added screenshots preview" />
     <MESSAGE value="Added 'About Me' section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 'About Me' section" />
+    <MESSAGE value="Added Projects in About Me" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Projects in About Me" />
   </component>
 </project>
