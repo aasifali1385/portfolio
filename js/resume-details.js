@@ -10,20 +10,23 @@ const EXPERIENCE = experienceSince(2022, 4);
 
 renderResume({
     name: "Aasif Ali",
-    headline: "Android & Flutter Application Developer",
+    headline: "Application Developer",
     photo: "",
     location: "Noida, India",
     experience: EXPERIENCE,
     cv: "resume/Aasif-Ali-Resume.pdf",
 
+    // Wrap words in **...** to make them bold
     about: [
-        "Results-driven Application Developer with " + EXPERIENCE + " of experience in native Android and " +
-        "cross-platform mobile app development, with 40+ apps published on Google Play. Hands-on expertise in " +
-        "Kotlin, Java, Jetpack Compose, Flutter and Dart, delivering production apps across e-commerce, " +
-        "healthcare, EdTech, travel and fintech domains.",
-        "Strong command of Clean Architecture, MVVM, REST API integration, Firebase, payment gateway integration " +
-        "and real-time communication (Socket.IO / WebSockets). Focused on writing scalable, maintainable code and " +
-        "improving app performance, stability and user experience through crash monitoring and root-cause fixes."
+        "**Application Developer** with **" + EXPERIENCE + "** of experience. I started out building " +
+        "**native Android** apps in **Java**, moved to **Kotlin**, and now build cross-platform apps with **Flutter**.",
+        "I have launched **30+ native Android apps** and **10+ Flutter apps** on **Google Play**, and " +
+        "**5+ Flutter apps** on the **Apple App Store**, across travel, healthcare, e-commerce, EdTech, fintech," +
+        "logistics and delivery, astrology, HR and productivity, chat support and CRM, billing, pet care and gaming.",
+        "I work with **Clean Architecture**, **MVVM**, **REST APIs** (**Retrofit**, **Dio**, **http**), **Firebase**, " +
+        "**payment gateways**, Flutter state management (**GetX**, **Bloc**, **Provider**, **Riverpod**) and " +
+        "scalable **real-time features** (**Pusher**, **Socket.IO / WebSockets**, **Firebase listeners**), and " +
+        "focus on clean, maintainable code and stable apps through **crash monitoring** and root-cause fixes."
     ],
 
     jobs: [
@@ -70,10 +73,15 @@ renderResume({
     ],
 
     skills: [
-        {group: "Languages & Platforms", items: ["Kotlin", "Java", "Dart", "SQL", "Android", "iOS (via Flutter)"]},
-        {group: "Frameworks & Architecture", items: ["Android SDK", "Jetpack Compose", "Flutter", "Clean Architecture", "MVVM", "Bloc", "GetX"]},
-        {group: "Libraries", items: ["Coroutines & Flow", "Retrofit", "Room", "Hilt", "WorkManager", "Socket.IO / WebSockets"]},
-        {group: "Tools", items: ["Firebase", "Crashlytics", "REST APIs", "Git", "Android Studio", "Play Console publishing"]}
+        {group: "Languages", items: ["Kotlin", "Java", "Dart", "SQL"]},
+        {group: "Platforms", items: ["Android", "Flutter", "iOS (via Flutter)"]},
+        {group: "Android", items: ["Android SDK", "Jetpack Compose", "Jetpack (ViewModel, LiveData, Navigation)", "Coroutines & Flow", "Retrofit", "Room", "Hilt", "WorkManager"]},
+        {group: "Flutter", items: ["GetX", "Bloc", "Provider", "Riverpod", "Dio", "http"]},
+        {group: "Architecture", items: ["Clean Architecture", "MVVM", 'MVC', "Modular projects"]},
+        {group: "Real-time", items: ["Pusher", "Socket.IO / WebSockets", "Firebase listeners"]},
+        {group: "Firebase", items: ["Authentication", "Cloud Firestore", "Cloud Messaging (FCM)", "Crashlytics", "Analytics"]},
+        {group: "Integrations", items: ["REST APIs", "Razorpay", "Stripe", "In-app purchases", "Google Maps API", "Meta messaging APIs"]},
+        {group: "Tools & Publishing", items: ["Git", "Android Studio", "Google Play Console", "Apple App Store publishing"]}
     ],
 
     projects: [
@@ -148,7 +156,7 @@ renderResume({
         {
             degree: "Bachelor of Computer Applications (BCA)",
             school: "Disha Bharti College",
-            location: "Noida, India",
+            location: "Saharanpur, India",
             period: "2020",
             grade: ""
         }

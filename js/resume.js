@@ -11,7 +11,7 @@
  *   experience  Total experience for the stats row, e.g. "4.5+ years"
  *   cv          Path of the PDF built from resume/Aasif-Ali-Resume.tex, for the
  *               Download CV button (without it the button is greyed out)
- *   about       List of paragraphs for "About me"
+ *   about       List of paragraphs for "About me"; wrap words in **...** to make them bold
  *   jobs        List of {role, company, period, location, points: [...]}
  *   skills      List of skills shown as chips, or groups: {group: "Languages", items: [...]}
  *   projects    List of {name, tech, year, link, points: [...]}
@@ -71,7 +71,9 @@ function renderResume(me) {
                 ${body}
             </section>` : '';
 
-    const about = list(me.about).map((p) => `<p class="pv-text">${esc(p)}</p>`).join('');
+    // **word** in a paragraph is shown in bold
+    const bold = (text) => esc(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    const about = list(me.about).map((p) => `<p class="pv-text">${bold(p)}</p>`).join('');
 
     const jobs = list(me.jobs).map((job) => `
                 <div class="rs-item">

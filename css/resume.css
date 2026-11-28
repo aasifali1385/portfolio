@@ -226,3 +226,9 @@
         display: none;
     }
 }
+
+/* Bold words in About me */
+.rs .pv-text strong {
+    color: var(--pv-text);
+    font-weight: 500;
+}

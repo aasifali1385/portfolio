@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9e415aef-83d1-42b0-85da-600707265dee" name="Changes" comment="Added Projects in About Me">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/apps/henry-harvin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/apps/henry-harvin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/resume.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resume-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/resume-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume/Aasif-Ali-Resume.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/resume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795719708284</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added Projects in About Me">
+      <option name="closed" value="true" />
+      <created>1795783748018</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1795783748018</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
